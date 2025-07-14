@@ -4,6 +4,7 @@ import Berita from './pages/Berita'; // kamu bikin halaman Berita
 import DetailBerita from './pages/DetailBerita'; // opsional
 import ProfilSekolah from './pages/ProfilSekolah';
 import Kepengurusan from './pages/Kepengurusan';
+import Kontak from './pages/Kontak';
 
 import './App.css';
 
@@ -20,6 +21,8 @@ function App() {
     PageComponent = <ProfilSekolah />;
   } else if (path === '/data-kepengurusan') {
     PageComponent = <Kepengurusan />;
+  } else if (path === '/kontak') {
+    PageComponent = <Kontak />;
   } else {
     PageComponent = <LandingPage />;
   }
