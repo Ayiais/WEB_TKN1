@@ -14,16 +14,15 @@ const Fasilitas = () => {
           
           {/* Gambar */}
           {/* Gambar */}
-            <div className="md:w-[260px] w-full ml-4 md:ml-6">
-                <div className="border-[3px] border-blue-300 rounded-bl-[95px] rounded-br-[95px] p-1 bg-white">
-                    <img
-                    src="/images/galeri1.jpg"
-                    alt="Fasilitas TK"
-                    className="w-full h-full object-cover rounded-bl-[95px] rounded-br-[95px]"
-                    />
-                </div>
+            <div className="w-full md:w-[360px] lg:w-[260px] ml-4 md:ml-6">
+              <div className="border-[3px] border-blue-300 rounded-bl-[95px] rounded-br-[95px] p-1 bg-white">
+                <img
+                  src="/images/galeri1.jpg"
+                  alt="Fasilitas TK"
+                  className="w-full h-full object-cover rounded-bl-[95px] rounded-br-[95px]"
+                />
+              </div>
             </div>
-
 
           {/* Teks */}
           <div className="md:w-3/4 flex items-center min-h-[180px] px-6 py-6 md:px-8">
