@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
-      <div className="w-full max-w-screen-2xl mx-auto px-6 md:px-12 py-3 flex items-center justify-between">
+      <div className="w-full max-w-screen-2xl mx-auto px-6 lg:px-12 py-3 flex items-center justify-between">
 
 
         {/* Kiri: Logo */}
@@ -19,7 +19,7 @@ export default function Navbar() {
         </div>
 
         {/* Tengah: Menu Desktop */}
-        <div className="hidden md:flex flex-1 justify-center gap-20 text-sm font-medium text-blue-900">
+        <div className="hidden lg:flex flex-1 justify-center gap-20 text-sm font-medium text-blue-900">
           <div className="relative group">
             <button className="hover:text-blue-600">Profil</button>
             <div className="absolute left-0 mt-2 bg-white rounded-xl shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 w-48 z-50">
@@ -38,19 +38,28 @@ export default function Navbar() {
               </a>
             </div>
           </div>
-          <a href="#informasi" className="hover:text-blue-600">Informasi</a>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.location.href = "/berita";
+            }}
+            className="hover:text-blue-600"
+          >
+            Berita
+          </a>
           <a href="#kontak" className="hover:text-blue-600">Kontak</a>
           <a href="#pembelajaran" className="hover:text-blue-600">Pembelajaran</a>
           <a href="#ppdb" className="hover:text-blue-600">PPDB</a>
         </div>
 
         {/* Tombol Masuk Desktop */}
-        <button className="hidden md:inline-block border border-gray-400 px-5 py-1.5 rounded-full text-sm text-gray-700 hover:bg-gray-100">
+        <button className="hidden lg:inline-block border border-gray-400 px-5 py-1.5 rounded-full text-sm text-gray-700 hover:bg-gray-100">
           Masuk
         </button>
 
         {/* Hamburger Menu Mobile */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={toggleMenu}>
             <HiMenu size={28} />
           </button>
