@@ -7,14 +7,15 @@ const HalamanKontakk = () => {
   return (
     <>
     <Navbar />
-    <div className="py-16 px-4 md:px-20 bg-white">
-      <div className="mb-6 mt-6">
+    <div className="w-full bg-white text-left pb-16">
+      <div className="px-6 md:px-10 lg:px-20 space-y-10 mx-auto max-w-full md:max-w-3xl lg:max-w-full">
         <a
           href="/"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium">
-          <HiArrowLeft className="mr-1 text-2xl" />
+          className="flex items-center text-blue-800 font-semibold mt-24"
+          >
+            <HiArrowLeft className="mr-2 text-3xl" />
          </a>
-      </div>
+
       <div className="max-w-6xl mx-auto px-4 py-8">
         <h1 className="text-left text-2xl md:text-5xl font-extrabold text-[#064A8C] mb-8">
           Kontak Kami
@@ -76,6 +77,7 @@ const HalamanKontakk = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
     </div>
     </>
